@@ -1,0 +1,261 @@
+@font-face { font-family: Roboto; src: url('fonts/Roboto-Regular.ttf'); } 
+@font-face { font-family: Roboto; font-weight: lighter; src: url('fonts/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto; font-weight: bold; src: url('fonts/Roboto-Medium.ttf'); }
+@font-face { font-family: Roboto; font-weight: bolder; src: url('fonts/Roboto-Bold.ttf'); }
+
+body {
+	font-family: "Roboto", Helvetica, Arial, san-serif;
+	font-size: 14px;
+	background: #EEE;
+	color: #333;
+}
+
+h1 {
+	font-weight: lighter !Important;
+	color: #333;
+	font-size: 54px;
+	margin-top: 140px;
+	text-shadow: 1px 1px #AAA;
+}
+
+h2 {
+	font-weight: lighter;
+	font-size: 20px;
+	color: #666;
+	line-height: 60px;
+	vertical-align: middle;
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: 28px;
+	color: #333;
+	line-height: 64px;
+	vertical-align: middle;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.light {
+	font-weight: lighter;
+}
+
+.normal {
+	font-weight: normal;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.gray {
+	color: #999;
+}
+
+.left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+
+div.wrapper {
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+div.content {
+	height: 100%
+}
+
+
+div#header {
+	margin-top: 10px;
+	height: 70px;
+}
+
+div#logo {
+	border-right: 1px solid #CCC;
+}
+
+div#logo img {
+	width: 200px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+div#tagline {
+}
+
+div.social {
+	line-height: 55px;
+	vertical-align: middle;
+}
+
+
+div#splash {
+	background-image: url('../images/feature-bg.jpg');
+	height: 580px;
+}
+
+img.sharp {
+	position: absolute;
+	top: 70px;
+}
+
+.mask {
+    border:1px solid green;
+    -webkit-mask-image: url('../images/mask.gif');
+    -webkit-mask-repeat:no-repeat;
+    -webkit-mask-position:210px 115px;
+    mask: url('../images/mask.gif');
+}
+
+div#device {
+	padding-top: 20px;
+}
+
+div#contact {
+	margin-top: 70px;
+}
+
+div#description {
+
+}
+
+
+div#services {
+	background: #FFF;
+	height: 320px;
+	border-bottom: 1px solid #DDD;
+}
+
+div#services_text {
+	height: 320px;
+	display: table;
+}
+
+div#services_text p {
+	color: #333;
+	font-size: 18px;
+	line-height: 30px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+div.checklist {
+	height: 320px;
+	display: table;
+	color: #333;
+	font-size: 18px;
+}
+
+div.checklist ul {
+	display: table-cell;
+	vertical-align: middle;
+	list-style: url('../images/check.png');
+	padding-left: 0;
+	margin-left: 0;
+}
+
+li.check {
+	line-height: 48px;
+}
+
+div#clients {
+	height: 220px;
+}
+
+
+div.icon {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+div#clients_imgs {
+	height: 445px;
+	background-image: url('../images/clients-bg.jpg');
+}
+
+div#shadow {
+	text-align: center;
+}
+
+
+div#products {
+	background: #FFF url('../images/border-vertical.png') no-repeat center 70px;
+	border-bottom: 1px solid #DDD;
+}
+
+div#products .title {
+	margin-top: 14px;
+	font-size: 18px;
+}
+
+div#products .ic {
+	margin-top: 8px;
+}
+
+div#products .desc {
+	font-size: 14px;	
+	line-height: 18px;
+	margin-top: 8px;
+	min-height: 100px;
+}
+
+div#team {
+	padding-bottom: 10px;
+}
+
+div.pic {
+	margin-bottom: 16px;
+}
+
+
+div#footer	 {
+	height: 200px;	
+	background: #FFF;
+	border-top: 1px solid #DDD;
+}
+
+div#copy {
+	line-height: 120px;
+	border-right: 1px solid #CCC;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+div#list_right, div#list_left {
+	height: 200px;
+	display: table;
+}
+
+div#list_right ul, div#list_left ul {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+li.foot {
+	line-height: 36px;	
+}
+
+div#footer a, div#footer a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+div#footer a:active, div#footer a:hover {
+	text-decoration: underline;
+}
+
+div#play_store {
+	margin-top: 40px;
+}
+
+div#made_nyc {
+	margin-top: 20px;
+	text-align: center;
+}
