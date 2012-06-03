@@ -1,7 +1,9 @@
-@font-face { font-family: Roboto; src: url('fonts/Roboto-Regular.ttf'); } 
-@font-face { font-family: Roboto; font-weight: lighter; src: url('fonts/Roboto-Light.ttf'); }
-@font-face { font-family: Roboto; font-weight: bold; src: url('fonts/Roboto-Medium.ttf'); }
-@font-face { font-family: Roboto; font-weight: bolder; src: url('fonts/Roboto-Bold.ttf'); }
+/*
+@font-face { font-family: Roboto; src: url('../fonts/Roboto-Regular.ttf'); } 
+@font-face { font-family: Roboto; font-weight: lighter; src: url('../fonts/Roboto-Light.ttf'); }
+@font-face { font-family: Roboto; font-weight: bold; src: url('../fonts/Roboto-Medium.ttf'); }
+@font-face { font-family: Roboto; font-weight: bolder; src: url('../fonts/Roboto-Bold.ttf'); }
+*/
 
 body {
 	font-family: "Roboto", Helvetica, Arial, san-serif;
@@ -54,10 +56,11 @@ h3 {
 
 .left {
 	float: left;
-	margin-right: 10px;
-	margin-bottom: 5px;
 }
 
+.right {
+	float: right;
+}
 
 div.wrapper {
 	width: 100%;
@@ -114,6 +117,7 @@ img.sharp {
 
 div#device {
 	padding-top: 20px;
+	background: url('../images/nexus-bg-1.png') 38px 104px no-repeat;
 }
 
 div#contact {
@@ -137,7 +141,7 @@ div#services_text {
 }
 
 div#services_text p {
-	color: #333;
+	color: #555;
 	font-size: 18px;
 	line-height: 30px;
 	display: table-cell;
@@ -148,7 +152,7 @@ div.checklist {
 	height: 320px;
 	display: table;
 	color: #333;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 div.checklist ul {
@@ -168,7 +172,7 @@ div#clients {
 }
 
 
-div.icon {
+li.icon {
 	width: 100px;
 	height: 100px;
 	text-align: center;
@@ -177,41 +181,87 @@ div.icon {
 
 div#clients_imgs {
 	height: 445px;
-	background-image: url('../images/clients-bg.jpg');
+	background-image: url('../images/clients-bg-fieldlens.jpg');
+	overflow: hidden;
+}
+
+div#clients-container {
+
 }
 
 div#shadow {
 	text-align: center;
 }
 
+div.blurb {
+	background: rgb(200, 54, 54); /* The Fallback */
+	background: rgba(255, 255, 255, 0.8);
+	border-radius: 20px;
+	margin-top: 60px;
+	color: #555;
+}
+
+div#right-blurb {
+	display: none;
+}
+
+div.blurb img {
+	margin: 14px;
+	text-align: center;
+}
+
+div.blurb p {
+	margin: 10px;
+}
 
 div#products {
 	background: #FFF url('../images/border-vertical.png') no-repeat center 70px;
 	border-bottom: 1px solid #DDD;
+	padding-bottom: 10px;
 }
 
-div#products .title {
+a.title {
 	margin-top: 14px;
 	font-size: 18px;
+	text-decoration: none;
+	color: #333;
 }
 
 div#products .ic {
 	margin-top: 8px;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
 
 div#products .desc {
 	font-size: 14px;	
 	line-height: 18px;
 	margin-top: 8px;
-	min-height: 100px;
+}
+
+div.product {
+	border-radius: 20px;
+	cursor: pointer;
+	min-height: 120px;
+	padding: 10px 0;
+}
+
+div.hover {
+	background-color: #EEE;
 }
 
 div#team {
 	padding-bottom: 10px;
 }
 
-div.pic {
+li.pic {
 	margin-bottom: 16px;
+}
+
+p.member_name {
+	font-size: 18px;
+	margin-top: 14px;
+	margin-bottom: 14px;
 }
 
 
@@ -258,4 +308,25 @@ div#play_store {
 div#made_nyc {
 	margin-top: 20px;
 	text-align: center;
+}
+
+/* ============================= */
+/* ! Layout for 1024             */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 1260px) {
+	div.wrapper {
+		width: 100%;
+		max-width: 1010px;
+		margin: 0 auto;
+	}
+	
+	div#clients_imgs {
+		background-position-x: -200px;
+	}
+	
+	div#device {
+		padding-top: 20px;
+		background: url('../images/nexus-bg-2.png') 38px 104px no-repeat;
+	}
 }
