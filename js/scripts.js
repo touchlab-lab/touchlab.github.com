@@ -83,17 +83,17 @@ $(document).ready(function() {
   			{
   				'name'  :  'OHours',
   				'url'	:  'http://ohours.org/kpgalligan',
-  				'desc'  :  'Follow him on twitter'
-  			},
-  			{
-  				'name'	  :  '@kpgalligan',
-  				'twitter' :  'https://twitter.com/#!/kpgalligan',
   				'desc'  :  'Check out his office hours, Fridays at 2PM EST'
   			},
   			{
+  				'name'	  :  '@kpgalligan',
+  				'url' :  'https://twitter.com/#!/kpgalligan',
+  				'desc'  :  'Follow him on twitter'
+  			},
+  			{
   				'name'	  :  'Stack Overflow',
-  				'twitter' :  'http://stackoverflow.com/users/227313/kevin-galligan',
-  				'desc'  :  null
+  				'url' :  'http://stackoverflow.com/users/227313/kevin-galligan',
+  				'desc'  :  '<img src="http://stackoverflow.com/users/flair/227313.png?theme=dark" width="208" height="58" alt="profile for Kevin Galligan at Stack Overflow" title="profile for Kevin Galligan at Stack Overflow" />'
   			}
   		]
   	},
@@ -113,17 +113,17 @@ $(document).ready(function() {
   			{
   				'name'  :  'Cflat',
   				'url'	:  'http://code.google.com/p/cflat/',
-  				'desc'  :  null
+  				'desc'  :  ""
   			},
   			{
   				'name'	  :  'SharpScrabble',
-  				'twitter' :  'http://code.google.com/p/sharpscrabble/',
-  				'desc'    :  null
+  				'url' :  'http://code.google.com/p/sharpscrabble/',
+  				'desc'    :  ""
   			},
   			{
   				'name'	  :  'Stack Overflow',
-  				'twitter' :  'http://stackoverflow.com/users/227313/kevin-galligan',
-  				'desc'    :  null
+  				'url' :  'http://stackoverflow.com/users/248994/wsanville',
+  				'desc'    :  '<img src="http://stackoverflow.com/users/flair/248994.png?theme=dark" width="208" height="58" alt="profile for wsanville at Stack Overflow" title="profile for wsanville at Stack Overflow" />'
   			}
   		]
   	},
@@ -146,50 +146,54 @@ $(document).ready(function() {
   		'icon'     : 'images/pic-paul-large.jpg',
   		'position' : 'Lead Designer',
   		'desc'     : 'Paul is a self-taught designer and developer. He has been focused on Android since version 1.1, published many successful apps, won a couple of awards, and done a bunch of consulting. He\'s passionate about UX/UI design, and is a Photoshop wiz.',
-  		'links'     : [
+  		'links'    : [
   			{
   				'name'  :  '+Paul Burke',
-  				'url'	:  'http://ohours.org/kpgalligan',
+  				'url'	:  'https://plus.google.com/113406723988623654387',
   				'desc'  :  'Follow him on Google+'
   			},
   			{
-  				'name'	  :  '@ipaulpro',
-  				'twitter' :  'https://twitter.com/#!/kpgalligan',
-  				'desc'  :  'Check out his office hours, Fridays at 2PM EST'
+  				'name'	:  'iPaulPro',
+  				'url'   :  'https://dribbble.com/iPaulPro',
+  				'desc'  :  'Check him out on Dribbble'
   			},
   			{
-  				'name'	  :  'Stack Overflow',
-  				'twitter' :  'http://stackoverflow.com/users/227313/kevin-galligan',
-  				'desc'  :  null
+  				'name'	:  'Stack Overflow',
+  				'url'   :  'http://stackoverflow.com/users/377260/ipaulpro',
+  				'desc'  :  '<img src="http://stackoverflow.com/users/flair/377260.png?theme=dark" width="208" height="58" alt="profile for iPaulPro at Stack Overflow" title="profile for iPaulPro at Stack Overflow" />'
   			}
   		]
   	}
   );
-  
-  $(".pic").click(function() {
-    var i = $(this).index();
-    var member = team[i];
-    
-    $('div#pic-team img').remove();
-    $('div#pic-team').empty().append(
-    	'<img src="'+ member.icon +'" class="grid_5" />'
-    	+ '<p class="grid_6 member_name medium">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
-    	+ '<p class="grid_6 member_desc">' + member.desc
-    );
-  });
 
   /** End Team List **/
 
+ $(".pic").click(function() {
 
-/*
-  $(window).resize(function() {
-    var width = $(window).width();
-    var difference = width - 1280;
-    if (difference < 0) {
-    	$('#device').css('background-position-x', difference + 38);
-    } else {
-    	$('#device').css('background-position-x', '38');    
-    }
+    $('div#pic-team img').remove();
+ 	$('.pic img').removeClass('selected');
+  	$(this).find('img').addClass('selected');
+
+    var i = $(this).index()
+      , member = team[i]
+      , links = member.links
+      , view
+      , stack;
+    for(var x = 0; x < links.length; x++) {
+       var link = links[x];
+	   if(link.name != 'Stack Overflow') {
+	   	 view += '<p class="link">'+ link.desc +': <a href="'+ link.url +'">'+ link.name +'</a></p>';
+	   } else {
+	     view += '<div class="stack">'+ link.desc +'</div>';
+	   }
+	}
+	
+    $('div#pic-team').empty().append(
+    	'<img src="'+ member.icon +'" class="grid_5" />'
+    	+ '<p class="grid_6 member_name medium">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
+    	+ '<p class="grid_6 member_desc">'+ member.desc +'</p>'
+    	+ '<div class="grid_6 links">'+ if view +'</div>'
+  	);
   });
-*/
+  
 });

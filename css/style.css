@@ -319,6 +319,18 @@ li.pic {
 	margin-bottom: 16px;
 }
 
+.selected {
+	outline: solid 5px #9abb58;
+}
+
+p.link {
+	margin-top: 10px;
+}
+
+div.stack {
+	margin-top: 20px;
+}
+
 p.member_name {
 	font-size: 18px;
 	margin-top: 14px;
