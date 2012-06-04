@@ -73,7 +73,7 @@ $(document).ready(function() {
   /** Team List **/
 	
 	
-  var team = new Array( 
+  var team = [ 
   	{
   		'name'     : 'Kevin Galligan',
   		'icon'     : 'images/pic-kevin-large.jpg',
@@ -164,7 +164,7 @@ $(document).ready(function() {
   			}
   		]
   	}
-  );
+  ];
 
   /** End Team List **/
 
