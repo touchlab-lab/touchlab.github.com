@@ -192,7 +192,7 @@ $(document).ready(function() {
     	'<img src="'+ member.icon +'" class="grid_5" />'
     	+ '<p class="grid_6 member_name medium">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
     	+ '<p class="grid_6 member_desc">'+ member.desc +'</p>'
-    	+ '<div class="grid_6 links">'+ if view +'</div>'
+    	+ '<div class="grid_6 links">'+ view +'</div>'
   	);
   });
   
