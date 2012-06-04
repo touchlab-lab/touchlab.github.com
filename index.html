@@ -11,7 +11,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
-	<script src="js/scripts.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/jquery.simplemodal.js"></script>
+	<script type="text/javascript" src="js/osx.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
 
 	<body>
 		
@@ -49,7 +51,7 @@
 					<h1><span class="thin">Touch Lab is a</span><br /><span class="light">NYC</span><span class="thin">-based</span> <span class="light">Android<br /> development</span> <span class="thin">shop.</span></h1>
 				</div>
 				<div id="contact" class="grid_4 prefix_4">
-					<a href="#" title="Contact Us"><img src="images/contact-btn.png" alt="Contact Us Button" /></a>
+					<a href="#" title="Contact Us" id="contact_us" class="osx"><img src="images/contact-btn.png" alt="Contact Us Button" /></a>
 				</div>
 			</div>
 		</div>
@@ -218,13 +220,32 @@
 				<div id="play_store" class="grid_3 prefix_1">
 					<a href="http://play.google.com/store/apps/developer?id=Touch+Lab+Inc" title="Touch Lab on Google Play"><img src="images/footer-playstore.png" alt="Google Play logo" /></a>
 				</div>
-				<div id="made_nyc" class="grid_3 prefix_1">
+				<div id="made_nyc" class="grid_2 prefix_1">
 					<a href="http://www.madeinnyc.org/" title="Touch Lab is Made in NYC"><img src="images/footer-madeinnyc.jpg" alt="Made in NYC logo" /></a>
+				</div>
+				<div id="nwc" class="grid_2 omega">
+					<a href="http://www.nwc.co/" title="Touch Lab is Made at New Work City"><img src="images/nwc.png" alt="New Work City" width="50" height="50" /></a>
 				</div>
 			</div>
 		</div>
 		<!-- end #footer -->
 		
+		<!-- modal content -->
+		<div id="osx-modal-content">
+			<div id="osx-modal-title">Contact Us</div>
+			<div class="close"><a href="#" class="simplemodal-close">x</a></div>
+			<div id="osx-modal-data">
+				<h2>We love chatting Android.</h2>
+				<p>Contact Kevin if you'd like to discuss potential projects, or if you\'d like to get involved with the meetup group and/or the broader NYC Android community.</p>
+				<p><span class="medium">Email: </span><a href="mailto:kevin@touchlab.co">kevin@touchlab.co</a></p>
+				<p><span class="medium">Phone: </span>917-836-3823</p>
+				<p><span class="medium">Twitter: </span><a href="http://twitter.com/kpgalligan" target="_blank">@kpgalligan</a> / <a href="http://twitter.com/touchlabny" target="_blank">@touchlabny</a></p>
+				<p><span class="medium">OHours: </span> Come to one of our <a href="http://ohours.org/kpgalligan">weekly office hours</a>, every Friday from 2pm-3pm, to chat about anything you&#8217;d like in the mobile/Android space.</p>
+				<p><span class="medium">Address: </span>412 Broadway, Second Floor, New York, NY 10013</p>			
+				<p>Touch Lab works out of <a href="http://nwc.co/">New Work City</a>, New York&#8217;s OG co-working space.</p>	
+				<p><button class="simplemodal-close">Close</button> <span>(or press ESC or click the overlay)</span></p>
+			</div>
+		</div>
 	</body>
 	
 </html>

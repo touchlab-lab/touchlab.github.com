@@ -182,9 +182,9 @@ $(document).ready(function() {
     for(var x = 0; x < links.length; x++) {
        var link = links[x];
 	   if(link.name != 'Stack Overflow') {
-	   	 view += '<p class="link">'+ link.desc +': <a href="'+ link.url +'">'+ link.name +'</a></p>';
+	   	 view += '<p class="link">'+ link.desc +' - <a href="'+ link.url +'">'+ link.name +'</a></p>';
 	   } else {
-	     view += '<div class="stack">'+ link.desc +'</div>';
+	     view += '<div class="stack"><a href="'+ link.url +'">'+ link.desc +'</div>';
 	   }
 	}
 	
@@ -195,5 +195,15 @@ $(document).ready(function() {
     	+ '<div class="grid_6 links">'+ view +'</div>'
   	);
   });
+  
+  
+/*
+  // Load dialog on click
+  $('#contact_us').click(function (e) {
+      $('#contact_modal').modal();
+  
+      return false;
+  });
+*/
   
 });
