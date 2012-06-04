@@ -46,10 +46,8 @@ $(document).ready(function() {
       $('div#left-blurb').hide();
       $('div#right-blurb').fadeIn('slow');
     }
-    $('img.blurb_img').attr("src", client.icon);
-    $('img.blurb_img').attr("alt", client.name +" Logo");
-    $('div.blurb a').attr("href", client.url);
-    $('div.blurb a').attr("title", client.name +" Homepage");
+    $('img.blurb_img').attr("src", client.icon).attr("alt", client.name +" Logo");
+    $('div.blurb a').attr("href", client.url).attr("title", client.name +" Homepage");
     $('div.blurb p').text(client.desc);
     $('#clients_imgs').css('background-image', 'url(' + client.bg + ')'); 
     
@@ -175,7 +173,7 @@ $(document).ready(function() {
     $('div#pic-team img').remove();
     $('div#pic-team').empty().append(
     	'<img src="'+ member.icon +'" class="grid_5" />'
-    	+ '<p class="grid_6 member_name">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
+    	+ '<p class="grid_6 member_name medium">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
     	+ '<p class="grid_6 member_desc">' + member.desc
     );
   });
