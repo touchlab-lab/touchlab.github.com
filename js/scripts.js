@@ -177,7 +177,7 @@ $(document).ready(function() {
     var i = $(this).index()
       , member = team[i]
       , links = member.links
-      , view
+      , view = ""
       , stack;
     for(var x = 0; x < links.length; x++) {
        var link = links[x];
