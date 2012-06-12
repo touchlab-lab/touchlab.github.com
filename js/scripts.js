@@ -222,7 +222,6 @@ $(document).ready(function() {
   var mobile = (navigator.userAgent.match(/Mobile/i)) || (navigator.userAgent.match(/Android/i));
 
   if (mobile) {
-  	$('close').hide();
     $('#contact_us').click(function() {
         return true;
     });
