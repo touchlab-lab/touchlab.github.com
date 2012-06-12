@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   /** Clients List **/
   
-  var clients = new Array( 
+  var clients = [ 
   	{
   		"name" : "Field Lens",
   		"icon" : "images/client-icon-fieldlens.png",
@@ -31,7 +31,7 @@ $(document).ready(function() {
   		"url"  : "http://squarespace.com/",
   		"bg"   : "images/clients-bg-squarespace.jpg"
   	}
-  );
+  ];
 
   /** End Clients List **/
 
@@ -144,7 +144,7 @@ $(document).ready(function() {
   	{
   		'name'     : 'Paul Burke',
   		'icon'     : 'images/pic-paul-large.jpg',
-  		'position' : 'Lead Designer',
+  		'position' : 'Product Designer',
   		'desc'     : 'Paul is a self-taught designer and developer. He has been focused on Android since version 1.1, published many successful apps, won a couple of awards, and done a bunch of consulting. He\'s passionate about UX/UI design, and is a Photoshop wiz.',
   		'links'    : [
   			{
@@ -197,13 +197,33 @@ $(document).ready(function() {
   });
   
   
-/*
+    /** Preload **/
+
+  function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+  }
+  
+  preload([
+      'images/clients-bg-ap.jpg',
+      'images/clients-bg-fieldlens.jpg',
+      'images/clients-bg-squarespace.jpg',
+      'images/clients-bg-harvest.jpg',
+      'images/clients-bg-squarespace.jpg',
+      'images/pic-brian-large.jpg',
+      'images/pic-izzy-large.jpg',
+      'images/pic-kevin-large.jpg',
+      'images/pic-matt-large.jpg',
+      'images/pic-paul-large.jpg',      
+      'images/pic-will-large.jpg'    
+  ]);
+  
   // Load dialog on click
   $('#contact_us').click(function (e) {
       $('#contact_modal').modal();
   
       return false;
   });
-*/
   
 });
