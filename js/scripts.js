@@ -190,8 +190,8 @@ $(document).ready(function() {
 	
     $('div#pic-team').empty().append(
     	'<img src="'+ member.icon +'" class="grid_5" />'
-    	+ '<p class="grid_6 member_name medium">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
-    	+ '<p class="grid_6 member_desc">'+ member.desc +'</p>'
+    	+ '<p class="grid_6 member_name normal">'+ member.name +' <span class="light">- '+ member.position +'</span></p>'
+    	+ '<p class="grid_6 member_desc light">'+ member.desc +'</p>'
     	+ '<div class="grid_6 links">'+ view +'</div>'
   	);
   });
@@ -206,6 +206,8 @@ $(document).ready(function() {
   }
   
   preload([
+  	  'image/nexus-bg-1.png',
+  	  'image/nexus-bg-2.png',
       'images/clients-bg-ap.jpg',
       'images/clients-bg-fieldlens.jpg',
       'images/clients-bg-squarespace.jpg',

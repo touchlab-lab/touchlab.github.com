@@ -9,7 +9,7 @@ h1 {
 	color: #333;
 	font-weight: 300;
 	font-size: 54px;
-	margin-top: 140px;
+	margin-top: 100px;
 	text-shadow: 1px 1px #AAA;
 }
 
@@ -29,6 +29,12 @@ h3 {
 	vertical-align: middle;
 	text-align: center;
 	margin-top: 5px;
+}
+
+h3 a {
+	text-decoration: none;
+	font-size: 20px;
+	padding-left: 6px;
 }
 
 .thin {
@@ -75,7 +81,7 @@ div.content {
 
 
 div#header {
-	margin-top: 10px;
+	margin-top: 20px;
 	height: 70px;
 }
 
@@ -144,7 +150,7 @@ div.checklist {
 	height: 320px;
 	display: table;
 	color: #333;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 div.checklist ul {
@@ -156,7 +162,7 @@ div.checklist ul {
 }
 
 li.check {
-	line-height: 48px;
+	line-height: 64px;
 }
 
 div#clients {
@@ -203,9 +209,13 @@ div.blurb p {
 }
 
 div#products {
-	background: #FFF url('../images/border-vertical.png') no-repeat center 70px;
+	background: #FFF ;
 	border-bottom: 1px solid #DDD;
-	padding-bottom: 10px;
+	padding: 20px;
+}
+
+div#products_title {
+	margin-top: 10px;
 }
 
 a.title {
@@ -222,8 +232,9 @@ div#products .ic {
 }
 
 div#products .desc {
-	font-size: 14px;	
-	line-height: 18px;
+	font-size: 16px;
+	font-weight: 300;	
+	line-height: 22px;
 	margin-top: 8px;
 }
 
@@ -231,7 +242,7 @@ div.product {
 	border-radius: 20px;
 	cursor: pointer;
 	min-height: 120px;
-	padding: 10px 0;
+	padding: 20px 0;
 }
 
 div.hover {
@@ -264,6 +275,9 @@ p.member_name {
 	margin-bottom: 14px;
 }
 
+p.member_desc {
+	font-size: 16px;
+}
 
 div#footer	 {
 	height: 200px;	
@@ -335,6 +349,22 @@ div#contact_panel {
 
 p.space {
 	margin-bottom: 20px;
+}
+
+/* ============================= */
+/* ! Portfolio		             */
+/* ============================= */
+
+body.portfolio div#clients_imgs {
+	margin-top: 16px;
+}
+
+body.portfolio div#thumbs {
+	padding-bottom: 50px;
+}
+
+body.portfolio div.thumb {
+	margin-top: 50px;
 }
 
 /* ============================= */
