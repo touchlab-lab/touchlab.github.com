@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Touchlab-site-paul.iml" filepath="$PROJECT_DIR$/Touchlab-site-paul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/touchlab.github.com.iml" filepath="$PROJECT_DIR$/touchlab.github.com.iml" />
     </modules>
   </component>
 </project>
