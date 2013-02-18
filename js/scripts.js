@@ -23,14 +23,15 @@ $(document).ready(function() {
   		"desc" : "Harvest is an online time tracking, timesheet, and invoicing service.\n\nWe built an Android port of their iPhone application. The mobile version allows a subset of features available from their web application, centered around easy time entry.",
   		"url"  : "http://www.getharvest.com/",
   		"bg"   : "images/clients-bg-harvest.jpg"
-  	},
+  	}
+  	/*,
   	{
   		"name" : "Squarespace",
   		"icon" : "images/client-squarespace.png",
   		"desc" : "Squarespace is a simple and powerful website and blog hosting service.\n\nWe developed the Android version of their iPhone application, from scratch through public beta earlier this year while they prepped internal people to take over the project. The final app was recently put into the market.",
   		"url"  : "http://squarespace.com/",
   		"bg"   : "images/clients-bg-squarespace.jpg"
-  	}
+  	}*/
   ];
 
   /** End Clients List **/
