@@ -240,4 +240,22 @@ $(document).ready(function() {
 			width: '600'
     });
   }
+
+    if (mobile) {
+    $('#jobs_page').click(function() {
+        return true;
+    });
+  } else {
+	$('#jobs_page').openDOMWindow({
+			eventType:'click',
+			windowSource:'ajax',
+			borderColor: '',
+			borderSize: '0',
+			windowBGColor: '#EEE',
+			windowPadding: '0',
+			height: '420',
+			width: '600'
+    });
+  }
+
 });
