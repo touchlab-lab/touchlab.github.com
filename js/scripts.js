@@ -253,7 +253,7 @@ $(document).ready(function() {
 			borderSize: '0',
 			windowBGColor: '#EEE',
 			windowPadding: '0',
-			height: '420',
+			height: '480',
 			width: '600'
     });
   }
