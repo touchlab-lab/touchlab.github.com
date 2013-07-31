@@ -4,6 +4,13 @@ $(document).ready(function() {
   
   var clients = [ 
   	{
+      "name" : "1 Second Everyday",
+      "icon" : "images/client-1second.png",
+      "desc" : "Imagine a movie that includes every day of the rest of your life…FEATURED on Fast Company, MASHABLE, CNN, TED & BBC, 1 Second Everyday allows users to create a video montage of their life. We brought the popular native iPhone app to Android. Editing and producing video from a smartphone is a technical challenge but we made it happen.",
+      "url"  : "http://1secondeveryday.com/",
+      "bg"   : "images/clients-bg-1secondeveryday.jpg"
+    },
+	{
   		"name" : "Field Lens",
       "icon" : "images/client-icon-fieldlens.png",
   		"desc" : "Field Lens is a management tool for all facets of a construction project. Capture and communicate tasks and issues, with detailed workflow and media sharing.\n\nFieldLens is part of a small but growing set of companies building mobile first, and starting on Android. Very excited to be on the team.",
@@ -24,13 +31,6 @@ $(document).ready(function() {
   		"url"  : "http://www.getharvest.com/",
   		"bg"   : "images/clients-bg-harvest.jpg"
   	},
-  	{
-      "name" : "1 Second Everyday",
-      "icon" : "images/client-1second.png",
-      "desc" : "Imagine a movie that includes every day of the rest of your life…FEATURED on Fast Company, MASHABLE, CNN, TED & BBC, 1 Second Everyday allows users to create a video montage of their life. We brought the popular native iPhone app to Android. Editing and producing video from a smartphone is a technical challenge but we made it happen.",
-      "url"  : "http://1secondeveryday.com/",
-      "bg"   : "images/clients-bg-1secondeveryday.jpg"
-    },
     /*,
   	/*,
   	{
