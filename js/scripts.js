@@ -6,7 +6,7 @@ $(document).ready(function() {
   	{
       "name" : "1 Second Everyday",
       "icon" : "images/client-1second.png",
-      "desc" : "Imagine a movie that includes every day of the rest of your life…FEATURED on Fast Company, MASHABLE, CNN, TED & BBC, 1 Second Everyday allows users to create a video montage of their life. We brought the popular native iPhone app to Android. Editing and producing video from a smartphone is a technical challenge but we made it happen.",
+      "desc" : "Imagine a movie that includes every day of the rest of your life…FEATURED on Fast Company, MASHABLE, CNN, TED & BBC, 1 Second Everyday allows users to create a video montage of their life. We brought the popular native iPhone app to Android. Editing and producing video on an Android smartphone is a technical challenge but we made it happen.",
       "url"  : "http://1secondeveryday.com/",
       "bg"   : "images/clients-bg-1secondeveryday.jpg"
     },
@@ -47,13 +47,13 @@ $(document).ready(function() {
   $(".icon").click(function() {
     var i = $(this).index(); //get index position of clicked element
     var client = clients[i];
-    if (i % 2 == 0) {   //effects for client's spotlights.The 1st and 3rd will have dresciptions to the left. 2nd and 4th will have it on the right  
-      $('div#right-blurb').hide();
-      $('div#left-blurb').fadeIn('slow');
+    if (i % 2 == 0) {   //reversed it - JN 073113 - effects for client's spotlights.The 1st and 3rd will have dresciptions to the left. 2nd and 4th will have it on the right  
+	  $('div#left-blurb').hide();
+      $('div#right-blurb').fadeIn('slow');
     }
     else {
-      $('div#left-blurb').hide();
-      $('div#right-blurb').fadeIn('slow');
+       $('div#right-blurb').hide();
+      $('div#left-blurb').fadeIn('slow');
     }
     
     //bringing data from client's objects to the HTML 
