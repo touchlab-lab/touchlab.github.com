@@ -257,7 +257,7 @@ li.pic {
 	margin-bottom: 16px;
 }
 
-.pic img {width: 100px;}
+.pic img {width: 100px;height: 108px;}
 
 .selected {
 	outline: solid 5px #9abb58;
