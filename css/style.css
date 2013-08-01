@@ -179,7 +179,7 @@ li.icon {
 
 div#clients_imgs {
 	height: 445px;
-	background-image: url('../images/clients-bg-fieldlens.jpg');
+	background-image: url('../images/clients-bg-1secondeveryday.jpg');
 	overflow: hidden;
 }
 
@@ -195,7 +195,7 @@ div.blurb {
 	color: #555;
 }
 
-div#right-blurb {
+div#left-blurb {
 	display: none;
 }
 
