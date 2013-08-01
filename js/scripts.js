@@ -87,7 +87,7 @@ $(document).ready(function() {
   var team = [ 
   	{
   		'name'     : 'Kevin Galligan',
-  		'icon'     : 'images/pic-kevin-large.jpg',
+  		'icon'     : 'images/Kevin-av---800.jpg',
   		'position' : 'Lead Developer/President',
   		'desc'     : 'Kevin has a BA in CS from Colgate University. He spent several years managing developers for a financial firm, then left a few years ago to pursue the startup lifestyle. Since then, he has built several products, in both the web and mobile space.',
   		'links'     : [
