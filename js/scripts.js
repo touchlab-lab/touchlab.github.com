@@ -115,7 +115,7 @@ $(document).ready(function() {
   		'desc'     : 'Brian attended Georgia Tech and snagged a degree in CS. He used to be a web developer, but but switched over because he likes Android\'s \"openness.\" Brian is our very own Southern gentleman who enjoys Vietnamese subs and saying, \"Cool.\" Brian used to own a car, but now he scooters home.',
   		'links'     : []
   	},
-  	{
+  	/*{
   		'name'     : 'William Sanville',
   		'icon'     : 'images/pic-will-large.jpg',
   		'position' : 'Developer Extraordinaire',
@@ -137,7 +137,7 @@ $(document).ready(function() {
   				'desc'    :  '<img src="http://stackoverflow.com/users/flair/248994.png?theme=dark" width="208" height="58" alt="profile for wsanville at Stack Overflow" title="profile for wsanville at Stack Overflow" />'
   			}
   		]
-  	},
+  	},*/
   	{
   		'name'     : 'Matthew Davis',
   		'icon'     : 'images/pic-matt-large.jpg',

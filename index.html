@@ -18,6 +18,8 @@
 		<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
     	<script type="text/javascript" src="js/jquery.DOMWindow.js"></script>	
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<!--Tumblr Integration json method-->
+		<script type="text/javascript" src="http://touchlabblog.tumblr.com/api/read/json?tagged=featured"></script>
 	</head>
 	
 	<body>
@@ -63,8 +65,7 @@
 					<a href="jobs.html" onClick="_gaq.push(['_trackEvent', 'Inquiries' , 'Button Click', 'Red ShingleTop - Job', 2, false]);" title="We're Hiring!" id="jobs_page"><img src="images/hiring.png" alt="We're Hiring Button" /></a>
 				</div>
 			</div>
-		</div>
-		<!-- end #splash -->
+		</div><!-- end #splash -->
 		
 		<div id="services" class="wrapper">
 			<div class="container_16">
@@ -87,14 +88,62 @@
 					</ul>
 				</div>
 			</div>
-		</div>
-		<!-- end #services -->
+		</div><!-- end #services -->
 
+		<div id="blog" class="wrapper">
+			<div class="container_16">
+				<div class="grid_16">
+					<h3>From The Blog</h3>
+					<div class="grid_4 left">
+						<script type="text/javascript">
+							// The variable "tumblr_api_read" is now set.
+							document.write(
+								'<a class="title medium" href="' + tumblr_api_read['posts'][0]['url'] + 
+        '">' + tumblr_api_read['posts'][0]['regular-title'] + '</a>'
+								+ '<div class="desc">' +  tumblr_api_read['posts'][0]['regular-body'].substring(0,400) + '...<a class="title medium" href="' + tumblr_api_read['posts'][0]['url'] + 
+        '">' + '<p class="button">Read More</p></a></div> <!--end desc-->'
+							);
+						</script>
+					</div>
+					<div class="grid_4 push_1">
+						<script type="text/javascript">
+							// The variable "tumblr_api_read" is now set.
+							document.write(
+								'<a class="title medium" href="' + tumblr_api_read['posts'][1]['url'] + 
+        '">' + tumblr_api_read['posts'][1]['regular-title'] + '</a>'
+								+ '<div class="desc">' +  tumblr_api_read['posts'][1]['regular-body'].substring(0,400) + '...<a class="title medium" href="' + tumblr_api_read['posts'][1]['url'] + 
+        '">' + '<p class="button">Read More</p></a></div> <!--end desc-->'
+							);
+						</script>
+					</div>	
+					<div class="grid_6 right" id="signup">
+						<!-- Begin MailChimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+						<style type="text/css">
+							#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+							/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+							   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+						</style>
+						<div id="mc_embed_signup">
+						<form action="http://touchlab.us7.list-manage1.com/subscribe/post?u=428ec12559949a5c4d3ca0eb0&amp;id=c12f89696b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<label for="mce-EMAIL">Steal Our Thoughts</label>
+							<p>We get a lot of questions about things we're working on and all the lessons we learn from solving problems during development. While we post a lot to the blog, we share our best thoughts and lessons learned with our email subscribers. Don’t miss out.</p>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</form>
+						</div>
+
+						<!--End mc_embed_signup-->
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div><!--end #blog-->
 
 		<div id="clients" class="wrapper">
 			<div class="container_16">
 				<div class="grid_16">
-					<h3>Some of our recent clients 
+					<h3>Some recent work 
 					<!--Pulling this until we have a proper portfolio page - JN - 073113
 					a href="portfolio" title="Portfolio" class="gray light">(See All)</a-->
 					</h3>
@@ -149,7 +198,7 @@
 		</div>
 		
 		<div id="products_title" class="container_16 wrapper">
-		    <h3>Our products</h3>
+		    <h3>Our Secret Projects</h3>
 		</div>		
 		<div id="products" class="wrapper">
 			<div class="container_16">
@@ -166,10 +215,10 @@
 					<a href="https://github.com/touchlab/Superbus" class="title medium">Superbus <span class="gray normal">(Creator)</span></a>
 					<p class="desc">Superbus is an open source synchronization bus service for Android. The bus keeps commands in order, processes them one at a time, and will persist the command to be run later if the system can’t handle the command now.</p>
 				</div>
-				<div id="htmlselect" class="grid_6 prefix_1 suffix_1 product">
+				<!--div id="htmlselect" class="grid_6 prefix_1 suffix_1 product">
 					<a href="#htmlselect" class="title medium" onclick="return false;">HTMLSelect <span class="gray normal">(Coming Soon)</span></a>
 					<p class="desc">Android doesn't provide a way to step into the text select process. HTMLSelect allows touch-based selection of text using Javascript.</p>
-				</div>
+				</div-->
 			</div>
 		</div>
 		<!-- end #products -->
@@ -177,7 +226,7 @@
 		<div id="team" class="wrapper">
 		<div class="container_16">
 			<div class="grid_16">
-		        <h3>Our team</h3>
+		        <h3>Our awesome team</h3>
 		    </div>
 		    <div class="clear"></div>
 		    <div id="pic-team" class="grid_12">
@@ -190,9 +239,9 @@
 		    	<li id="pic-brian" class="grid_2 pic">
 		    		<a href="#" title="Brian" onclick="return false;"><img src="images/pic-brian.jpg" alt="Picture of Brian" /></a>
 		    	</li>
-		    	<li id="pic-will" class="grid_2 pic">
+		    	<!--li id="pic-will" class="grid_2 pic">
 		    		<a href="#" title="Will" onclick="return false;"><img src="images/pic-will.jpg" alt="Picture of Will" /></a>
-		    	</li>
+		    	</li-->
 		    	<li id="pic-matt" class="grid_2 pic">
 		    		<a href="#" title="Matt" onclick="return false;"><img src="images/pic-matt.jpg" alt="Picture of Matt" /></a>
 		    	</li>
@@ -210,7 +259,7 @@
 		<div id="footer" class="wrapper">
 			<div class="container_16">
 				<div id="copy" class="grid_5">
-					<p>&#169 2012 Touch Lab Inc. All rights Reserved</p>
+					<p>&#169 2013 Touch Lab Inc. All rights Reserved</p>
 				</div>
 				<div id="list_left" class="grid_2 prefix_1">
 					<ul>

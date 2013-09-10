@@ -29,6 +29,7 @@ h3 {
 	vertical-align: middle;
 	text-align: center;
 	margin-top: 5px;
+	text-transform:capitalize;
 }
 
 h3 a {
@@ -146,6 +147,32 @@ div#services_text p {
 	vertical-align: middle;
 }
 
+#blog {
+margin-bottom: 40px;
+}
+
+div#blog img {
+max-width: 100%;
+}
+
+#signup #mc_embed_signup {
+font-family: Roboto!important;
+font-size: 16px!important;
+background: rgba(0, 0, 0, 0)!important;
+}
+#signup label {
+    font-size: 28px!important;
+    letter-spacing: -1px!important;
+}
+#signup p {
+margin: 10px 0 15px 0!important;
+line-height: 150%!important;
+}
+#signup #mce-EMAIL {
+display: block!important;
+font-size:20px!important;
+}
+
 div.checklist {
 	height: 320px;
 	display: table;
@@ -167,6 +194,8 @@ li.check {
 
 div#clients {
 	height: 220px;
+	background: #FFF;
+	border-bottom: 1px solid #DDD;
 }
 
 
@@ -209,8 +238,6 @@ div.blurb p {
 }
 
 div#products {
-	background: #FFF ;
-	border-bottom: 1px solid #DDD;
 	padding: 20px;
 }
 
@@ -251,6 +278,9 @@ div.hover {
 
 div#team {
 	padding-bottom: 10px;
+	background: #FFF;
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 50px;
 }
 
 li.pic {
