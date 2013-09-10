@@ -172,6 +172,15 @@ line-height: 150%!important;
 display: block!important;
 font-size:20px!important;
 }
+#signup .clear {
+    visibility: visible!important;
+}
+#signup #mc-embedded-subscribe {
+    border-radius: 0!important;
+    background: #a5c63b;
+    border: 4px solid #fff;
+    padding: 0 0 32px 0;
+}
 
 div.checklist {
 	height: 320px;
