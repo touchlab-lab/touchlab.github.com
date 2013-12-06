@@ -133,7 +133,7 @@ $(document).ready(function() {
   		'name'     : 'Jeff Namnum',
   		'icon'     : 'images/pic-jeff-large.jpg',
   		'position' : 'Growth/VP',
-  		'desc'     : 'Jeff met Kevin at New Work City and fell in love with the awesome team of people that is Touch Lab. Most recetly he ran NoFancyName and helped founders and entrepreneurs grow their businesses. He speaks and teaches regularly on modern marketing, has been a marketing strategy mentor for multiple organizations, organized multiple conferences on modern and social marketing, loves long walks in the rain and is allergic to bullshit.',
+  		'desc'     : 'Jeff met Kevin at New Work City and fell in love with the awesome team of people that is Touch Lab. Most recently he ran NoFancyName and helped founders and entrepreneurs grow their businesses. He speaks and teaches regularly on modern marketing, has been a marketing strategy mentor for multiple organizations, organized multiple conferences on modern and social marketing, loves long walks in the rain and is allergic to bullshit.',
   		'links'     : [
   			{
   				'name'  :  'blog',
@@ -157,7 +157,7 @@ $(document).ready(function() {
 	{
   		'name'     : 'Olivia Lin',
   		'icon'     : 'images/pic-olivia-large.jpg',
-  		'position' : 'Operations',
+  		'position' : 'Operations/Organizational Ninja',
   		'desc'     : 'Olivia is a born-and-raised New Yorker from Brooklyn who loves spicy food, hot yoga, traveling and jogging. She graduated from the Macaulay Honors College (at Hunter College) with a degree in Media Studies. With experience in social media, startups/tech and customer support, she joined Touch Lab to run operations and is scarily organized. ',
   		'links'     : []
   	},
