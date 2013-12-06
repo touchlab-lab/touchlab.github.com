@@ -298,6 +298,14 @@ li.pic {
 	margin-bottom: 16px;
 }
 
+#pic-team {
+	min-height: 500px;
+}
+
+li.pic:nth-of-type(2n) {
+	clear: right;
+}
+
 .pic img {width: 100px;height: 108px;}
 
 .selected {

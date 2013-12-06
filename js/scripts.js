@@ -111,70 +111,63 @@ $(document).ready(function() {
   	{
   		'name'     : 'Brian Plummer',
   		'icon'     : 'images/pic-brian-large.jpg',
-  		'position' : 'Android Software Specialist',
+  		'position' : 'Software Developer',
   		'desc'     : 'Brian attended Georgia Tech and snagged a degree in CS. He used to be a web developer, but but switched over because he likes Android\'s \"openness.\" Brian is our very own Southern gentleman who enjoys Vietnamese subs and saying, \"Cool.\" Brian used to own a car, but now he scooters home.',
   		'links'     : []
   	},
-  	/*{
-  		'name'     : 'William Sanville',
-  		'icon'     : 'images/pic-will-large.jpg',
-  		'position' : 'Developer Extraordinaire',
-  		'desc'     : 'Will is a former web developer turned Android developer, with CS degrees from RPI and UConn. When not answering questions on Stack Overflow, Will works on open source projects Cflat and SharpScrabble. Will secretly loves functional programming, and thinks that every problem can be solved in terms of map and reduce. He almost always brings his lunch.',
-  		'links'     : [
-  			{
-  				'name'  :  'Cflat',
-  				'url'	:  'http://code.google.com/p/cflat/',
-  				'desc'  :  ""
-  			},
-  			{
-  				'name'	  :  'SharpScrabble',
-  				'url' :  'http://code.google.com/p/sharpscrabble/',
-  				'desc'    :  ""
-  			},
-  			{
-  				'name'	  :  'Stack Overflow',
-  				'url' :  'http://stackoverflow.com/users/248994/wsanville',
-  				'desc'    :  '<img src="http://stackoverflow.com/users/flair/248994.png?theme=dark" width="208" height="58" alt="profile for wsanville at Stack Overflow" title="profile for wsanville at Stack Overflow" />'
-  			}
-  		]
-  	},*/
-  	{
-  		'name'     : 'Matthew Davis',
-  		'icon'     : 'images/pic-matt-large.jpg',
-  		'position' : 'Developer',
-  		'desc'     : 'Matt is a recent graduate of Georgetown University, where he studied Computer Science and Government.  He was originally attracted to Android because of a deep love of Star Wars and decided to stick with it despite the fact that it does not, in actuality, involve making human-like robots.  In his spare time he enjoys playing board games and reading science fiction novels.',
+	{
+  		'name'     : 'Dave Redding',
+  		'icon'     : 'images/pic-dave-large.jpg',
+  		'position' : 'Software Developer',
+  		'desc'     : 'Dave has a Master\'s degree in software engineering from the University of Scranton. He has two years teaching experience and three years of Android Development under his belt. He loves all things mathematics and enjoys the outdoors.',
   		'links'     : []
   	},
   	{
   		'name'     : 'Izzy Oji',
   		'icon'     : 'images/pic-izzy-large.jpg',
-  		'position' : 'Devastatingly Attractive Intern *',
-  		'desc'     : 'Izzy is currently a junior at Stony Brook University majoring in computer science. She enjoys taking pictures and Knicks games. She has dreams of taking Kevin\'s job. * Izzy wrote this. Kevin would not write this because it would break all sorts of HR rules.',
+  		'position' : 'Software Developer',
+  		'desc'     : 'Izzy graduated from Stony Brook University in May of 2013 with a Bachelor\'s degree in CS. She started at Touch Lab as an intern in 2011. She currently lives in Brooklyn and she enjoys pilates, basketball, and taking pictures. She aspires to one day have Kevin\'s job!',
   		'links'     : []
+  	},  	
+	{
+  		'name'     : 'Jeff Namnum',
+  		'icon'     : 'images/pic-jeff-large.jpg',
+  		'position' : 'Growth/VP',
+  		'desc'     : 'Jeff met Kevin at New Work City and fell in love with the awesome team of people that is Touch Lab. Most recetly he ran NoFancyName and helped founders and entrepreneurs grow their businesses. He speaks and teaches regularly on modern marketing, has been a marketing strategy mentor for multiple organizations, organized multiple conferences on modern and social marketing, loves long walks in the rain and is allergic to bullshit.',
+  		'links'     : [
+  			{
+  				'name'  :  'blog',
+  				'url'	:  'http://jeffnamnum.com',
+  				'desc'  :  'Jeff\'s Random Ramblings'
+  			},
+  			{
+  				'name'	  :  '@namnum',
+  				'url' :  'https://twitter.com/#!/namnum',
+  				'desc'  :  'Follow him on twitter'
+  			}
+		]
   	},
   	{
-  		'name'     : 'Paul Burke',
-  		'icon'     : 'images/pic-paul-large.jpg',
-  		'position' : 'Product Designer',
-  		'desc'     : 'Paul is a self-taught designer and developer. He has been focused on Android since version 1.1, published many successful apps, won a couple of awards, and done a bunch of consulting. He\'s passionate about UX/UI design, and is a Photoshop wiz.',
-  		'links'    : [
-  			{
-  				'name'  :  '+Paul Burke',
-  				'url'	:  'https://plus.google.com/113406723988623654387',
-  				'desc'  :  'Follow him on Google+'
-  			},
-  			{
-  				'name'	:  'iPaulPro',
-  				'url'   :  'https://dribbble.com/iPaulPro',
-  				'desc'  :  'Check him out on Dribbble'
-  			},
-  			{
-  				'name'	:  'Stack Overflow',
-  				'url'   :  'http://stackoverflow.com/users/377260/ipaulpro',
-  				'desc'  :  '<img src="http://stackoverflow.com/users/flair/377260.png?theme=dark" width="208" height="58" alt="profile for iPaulPro at Stack Overflow" title="profile for iPaulPro at Stack Overflow" />'
-  			}
-  		]
-  	}
+  		'name'     : 'Matthew Davis',
+  		'icon'     : 'images/pic-matt-large.jpg',
+  		'position' : 'Software Developer',
+  		'desc'     : 'Matt is a recent graduate of Georgetown University, where he studied Computer Science and Government.  He was originally attracted to Android because of a deep love of Star Wars and decided to stick with it despite the fact that it does not, in actuality, involve making human-like robots.  In his spare time he enjoys playing board games and reading science fiction novels.',
+  		'links'     : []
+  	},
+	{
+  		'name'     : 'Olivia Lin',
+  		'icon'     : 'images/pic-olivia-large.jpg',
+  		'position' : 'Operations',
+  		'desc'     : 'Olivia is a born-and-raised New Yorker from Brooklyn who loves spicy food, hot yoga, traveling and jogging. She graduated from the Macaulay Honors College (at Hunter College) with a degree in Media Studies. With experience in social media, startups/tech and customer support, she joined Touch Lab to run operations and is scarily organized. ',
+  		'links'     : []
+  	},
+	{
+  		'name'     : 'Walter Dziemianczyk',
+  		'icon'     : 'images/pic-walter-large.jpg',
+  		'position' : 'Developer / Designer',
+  		'desc'     : 'Walter graduated from The New York Institute of Technology with a bachelors degree in Computer Science. He got into Android as a fun side project with his brother, and currently has a couple of projects in the Google Play Store. He is a tinkerer and likes to take things apart (and does not put them back together correctly).',
+  		'links'     : []
+  	},
   ];
 
   /** End Team List **/
