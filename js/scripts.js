@@ -133,7 +133,7 @@ $(document).ready(function() {
   		'name'     : 'Jeff Namnum',
   		'icon'     : 'images/pic-jeff-large.jpg',
   		'position' : 'Growth/VP',
-  		'desc'     : 'Jeff met Kevin at New Work City and fell in love with the awesome team of people that is Touch Lab. Most recently he ran NoFancyName and helped founders and entrepreneurs grow their businesses. He speaks and teaches regularly on modern marketing, has been a marketing strategy mentor for multiple organizations, organized multiple conferences on modern and social marketing, loves long walks in the rain and is allergic to bullshit.',
+  		'desc'     : 'Jeff met Kevin at New Work City and fell in love with the awesome team of people that is Touch Lab. Most recently he ran NoFancyName and helped founders and entrepreneurs grow their businesses. He speaks and teaches regularly on modern marketing, has been a strategy mentor for multiple organizations, has organized multiple conferences, loves long walks in the rain and is allergic to bullshit.',
   		'links'     : [
   			{
   				'name'  :  'blog',
