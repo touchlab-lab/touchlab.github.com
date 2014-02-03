@@ -207,6 +207,7 @@ div#clients {
 	height: 220px;
 	background: #FFF;
 	border-bottom: 1px solid #DDD;
+	display:none;
 }
 
 
@@ -221,6 +222,7 @@ div#clients_imgs {
 	height: 445px;
 	background-image: url('../images/clients-bg-1secondeveryday.jpg');
 	overflow: hidden;
+	display:none;
 }
 
 div#shadow {
@@ -250,10 +252,12 @@ div.blurb p {
 
 div#products {
 	padding: 20px;
+	display:none;
 }
 
 div#products_title {
 	margin-top: 10px;
+	display:none;
 }
 
 a.title {
