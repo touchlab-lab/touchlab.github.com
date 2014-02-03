@@ -304,6 +304,9 @@ li.pic {
 
 #pic-team {
 	min-height: 500px;
+	background-image: url(../images/team-holiday-2013.jpg);
+	background-size: cover;
+	background-position: center;
 }
 
 li.pic:nth-of-type(2n) {
